@@ -1,0 +1,30 @@
+#home-content{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.home-container{
+  height: 50%;
+  width: 50%;
+  text-align: center;
+  display: flex;
+}
+.home-container:nth-child(1){
+  background-color: #0ff0fc;
+}
+.home-container:nth-child(2){
+  background-color: #fc0e34;
+}
+.home-container:nth-child(3){
+  background-color: #ccff00;
+}
+.home-container:nth-child(4){
+  background-color: #bf00ff;
+}
+#home_profilepicture{
+  width: 50%;
+  margin: auto;
+  display: block;
+}

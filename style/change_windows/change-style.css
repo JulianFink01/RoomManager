@@ -1,0 +1,107 @@
+:root{
+  --window-width: 60vw;
+  --window-height: 60vh;
+}
+
+#changeProfilepicture{
+
+}
+
+
+/* Allgemeine Fenster einstellungen */
+.change_window{
+  transform: translate(calc((100vw - var(--window-width))/2),calc((100vh - var(--window-height))/2) );
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  height:  var(--window-height);
+  background-color: white;
+  border-radius: 25px;
+  z-index: 1000;
+  margin: auto;
+  box-shadow: rgba(0,0,0,0.6) -9999px 0px 0px 99999px;
+  display: flex;
+  align-items: flex-start;
+  transition: var(--transition-dur) all;
+}
+.show_window{
+  visibility: visible !important;
+  overflow: visible !important;
+  width: var(--window-width) !important;
+}
+
+.inner-change-field{
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  display: flex;
+}
+.inner-change-left{
+  float: left;
+}
+.inner-change-left img{
+  max-height: 40%;
+  margin: auto;
+}
+.inner-change-right{
+  float: right;
+}
+
+.change-form{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.change-form input{
+  margin: auto;
+  width: 100%;
+  height: 30%;
+  background-color: var(--color-grey);
+  border: none;
+  box-shadow: none;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding: var(--small-padding);
+}
+.change-form input[type="file"]{
+  text-align: center;
+}
+.change-form input[type="submit"]{
+    background-image: var(--main-gradient);
+    font-weight: bold;
+    color: white;
+    transition: var(--transition-dur) all ease-in;
+}
+.change-form input[type="submit"]:hover{
+    transform: scale(1.02);
+}
+
+@media(max-width: 1024px){
+  .change_window{
+    flex-direction: column;
+    height: var(--window-height);
+      transform: translate(calc((100vw - var(--window-width))/2),calc((100vh - var(--window-height))/2));
+  }
+  .inner-change-field{
+    width: 100%;
+
+  }
+  .change-form{
+    height: 90%;
+  }
+  .inner-register{
+    width: 100%;
+    height: 50%;
+  }
+  .change-form input{
+    height: 30%;
+  }
+  .inner-change-left img{
+    max-height: 70%;
+    margin: auto;
+  }
+
+}

@@ -11,3 +11,9 @@ body{
   opacity: 100% !important;
   visibility: visible !important;
 }
+.redtext{
+  color: red !important;
+}
+.greentext{
+  color: green !important;
+}
