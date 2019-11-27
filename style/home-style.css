@@ -24,7 +24,10 @@
   background-color: #bf00ff;
 }
 #home_profilepicture{
-  width: 50%;
+  height: 70%;
   margin: auto;
   display: block;
+  border-radius: 100%;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.2);
+
 }

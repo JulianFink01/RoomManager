@@ -6,5 +6,9 @@
     <div class="home-container"><img onclick="openWindow('changeProfilepicture')" id="home_profilepicture" src="style/ProfilePictures/<?php echo $user->getProfilePicture() ?>" alt="<?php echo $user->getUsername().' Profilbild'?>"/></div>
     <div class="home-container"></div>
     <div class="home-container"></div>
-    <div class="home-container"></div>
+    <div class="home-container">
+      <form action="logout.php" method="get">
+          <input type="submit"value="logout">
+      </form>
+    </div>
 </div>

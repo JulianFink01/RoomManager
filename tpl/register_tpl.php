@@ -5,7 +5,7 @@
             <img src="style/Images/login-icon.png" alt="login-icon" />
         </div>
         <div class="inner-register" id="register-right">
-            <form id="register-form" action="#" method="get">
+            <form id="register-form" action="register.php" method="post">
                   <input type="text" placeholder="Name" name="name" required />
                   <input type="text" placeholder="Surname" name="surname" required />
                   <input type="text" placeholder="Username" name="username" required />
