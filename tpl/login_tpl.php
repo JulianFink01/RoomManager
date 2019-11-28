@@ -8,7 +8,10 @@
                   <legend class="<?php if(isset($_SESSION["Error"])){echo 'redtext';} else if(isset($_SESSION["Info"])){echo 'greentext';}?>"><?php if(isset($_SESSION["Error"]))
                     {
                       echo $_SESSION["Error"];
-                    }?>
+                    }else if(isset($_SESSION["Info"]))
+                      {
+                        echo $_SESSION["Info"];
+                      }?>
                   </legend>
                   <input type="text" placeholder="Username" name="username" required />
                   <input type="password" placeholder="Password" name="password" required />
