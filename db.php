@@ -11,6 +11,7 @@ class db {
 	   public function __construct() {
        try {
         $this->connection = new PDO('mysql:host=localhost;dbname=roommanager;port=3306', 'root');
+        //$this->connection = new PDO('mysql:host=localhost;dbname=id11805685_roommanager', 'id11805685_fink', 'Fungog04');
         $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
           echo $e->getMessage();
