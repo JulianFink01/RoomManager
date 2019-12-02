@@ -1,7 +1,9 @@
 <?php
   session_start();
   require_once("db.php");
+  require_once("user.php");
 
+  $user = User::getUser($_SESSION["UserId"]);
   $id = $_SESSION["UserId"];
 
   if(isset($_POST["code"])){
@@ -14,7 +16,9 @@
       }
 
       $sql2 = "insert into gotCode (userId, datum) values ($id, now())";
+      if(!$user->isAdmin()){
       $db->update($sql2);
+      }
     }
     $db->close();
   header("Location: index.php");

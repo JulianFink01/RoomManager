@@ -1,6 +1,7 @@
 <?php
   require_once("change_windows/change_profilepicture.php");
   require_once("change_windows/change_infos.php");
+  require_once("change_windows/view_lastused.php");
   require_once("alertPrompt.php");
 ?>
 
@@ -15,16 +16,13 @@
       if(isset($_SESSION["code"])){
         ?>
         <div id="code">
-          <a <?php
+          <a onclick="<?php
           if($user->isAdmin()){
-            ?>
-            $s1 = "lastused";
-            $s2 = 'openWindow("$s1")'
-            $s = 'onclick="$s2"';
-            echo "onclick='openWindow('lastused')'";
-            <?php
+            echo "openWindow('lastused')";
           }
-          ?>><?php echo $_SESSION["code"];?></a>
+          ?>">
+          <?php echo $_SESSION["code"];?>
+        </a>
         </div>
         <?php
       }else{ ?>

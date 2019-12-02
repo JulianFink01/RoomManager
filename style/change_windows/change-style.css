@@ -78,6 +78,40 @@
 .change-form input[type="submit"]:hover{
     transform: scale(1.02);
 }
+#lastused-table{
+  padding-top: 12%;
+  width: 99%;
+  height: auto;
+  margin: 0;
+  border-collapse: collapse;
+  display: block;
+  overflow-y: scroll;
+}
+#lastused-table tr {
+  width: 100%;
+  height: auto;
+}
+#lastused-table tr td{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+#lastused-table tr td:nth-child(1){
+  border-right: 2px solid #2cb5e8;
+}
+#lastused-table tr:not(:last-child) {
+    border-bottom: 1px solid #2cb5e8;
+}
+.lastused-table-title{
+    border-bottom: 2px solid #2cb5e8;
+  color: #2cb5e8;
+  font-weight: bold;
+  font-size: 160%;
+}
+.lastused-table-img{
+  max-width: 40%;
+  max-height: 50%;
+}
 
 @media(max-width: 1024px){
   .change_window{
@@ -103,5 +137,10 @@
     max-height: 70%;
     margin: auto;
   }
-
+  #lastused-table{
+    padding-top: 25%;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 }

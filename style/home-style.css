@@ -25,20 +25,21 @@
 }
 #home_profilepicture{
   width: 100%;
+  height: auto;
+  margin-top: 50px;
   margin: auto;
   display: block;
   box-shadow: 0 6px 6px rgba(0,0,0,0.2);
-  transform: translate(0,-20%);
-
+  transform: translate(0,0);
   }
 #profilepicture-container{
-  position: relative;
-  width: 80%;
-  height: 0;
-  padding-bottom: 80%;
   margin: auto;
-  overflow: hidden;
-  border-radius: 100%;
+    display: inline-block;
+    position: relative;
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 .home_btn{
   width: 100%;
@@ -77,10 +78,11 @@
   display: block;
   align-items: baseline;
 }
-@media(min-width: 1100px){
-  #profilepicture-container{
-    position: relative;
-    width: 55%;
-    padding-bottom: 55%;
+@media(max-width: 1100px){
+  .home_btn input{
+    font-size: 120%;
+  }#profilepicture-container{
+      max-width: 180px;
+      max-height: 180px;
   }
 }
