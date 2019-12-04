@@ -2,6 +2,7 @@
 /**
   * DBClass
 */
+
 class db {
 
     protected $connection;
